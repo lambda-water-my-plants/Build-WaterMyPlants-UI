@@ -137,6 +137,8 @@ h4,
 h5 {
   font-family: 'Karla', sans-serif;
   font-weight: bold;
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
 h1 {
   font-size: 3rem;
@@ -151,6 +153,12 @@ h5 {
 }
 p {
   font-size: 1.25rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+div {
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
 .container {
   width: 100%;
