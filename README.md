@@ -10,3 +10,5 @@ Our app takes in information about the type of plant, and automatically sends ou
 ### What is the mission statement?  
 The Water Mypp ensures plant lovers never need to worry about scheduling or wondering about when the best time to water their plants are - we do it for you!  
 
+### Technical Design Document  
+The technical design document can be found [here](https://docs.google.com/document/d/1FAyLaWWjvthPrlgIjr8PdfB98Gg199KdGMB_t9B6cFE/edit)
