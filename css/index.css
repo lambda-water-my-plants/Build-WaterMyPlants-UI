@@ -156,6 +156,9 @@ p {
   margin: 0.5rem;
   padding: 0.5rem;
 }
+a {
+  font-size: 1.25rem;
+}
 div {
   margin: 0.5rem;
   padding: 0.5rem;
@@ -175,4 +178,79 @@ div {
   .container {
     background-color: yellow;
   }
+}
+.main-nav {
+  background-color: #248230;
+}
+.main-nav div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .main-nav div {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+}
+.main-nav span {
+  justify-self: flex-start;
+  margin: 1rem;
+}
+@media (max-width: 500px) {
+  .main-nav span {
+    margin: 0.5rem;
+  }
+}
+.main-nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5rem;
+}
+@media (max-width: 500px) {
+  .main-nav ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+.main-nav ul li {
+  width: 5rem;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .main-nav ul li {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .main-nav ul li {
+    width: 100%;
+    margin: 0rem;
+    padding: 1rem;
+    border-top: 1px solid #FFF;
+    background-color: #3CCB59;
+  }
+}
+@media (max-width: 500px) {
+  .main-nav ul li:last-child {
+    border-bottom: 1px solid #FFF;
+  }
+}
+.main-nav ul li a {
+  text-decoration: none;
+  color: #FFF;
 }

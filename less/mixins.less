@@ -1,11 +1,27 @@
 // Test Mixins
 
-// Test w/bg color
+
 .test(@color) {
     background-color: @color;
-}
+} // Test w/bg color
 
-// Test w/border
+
 .test2() {
     border: 2px solid red;
+} // Test w/border
+
+// Flex Mixins
+
+.flex(@justify,@align) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.flexcol(@justify,@align) {
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: @justify;
+    align-items: @align;
 }
