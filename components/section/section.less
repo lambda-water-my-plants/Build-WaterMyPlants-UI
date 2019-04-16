@@ -5,13 +5,14 @@
 
     div {
         width: 100%;
+        margin: 2rem;
         height: 25rem;
         .test(blue);
     }
 }
 
 .two-col {
-    .flex(space-between, center);
+    .flex(space-around, center);
 
     div {
         width: 45%;
@@ -21,7 +22,7 @@
 }
 
 .three-col {
-    .flex(space-between, center);
+    .flex(space-around, center);
 
     @media @tablet {
         .flexcol(center, center);
