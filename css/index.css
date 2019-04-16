@@ -181,6 +181,8 @@ div {
 }
 .main-nav {
   background-color: #3CCB59;
+  position: fixed;
+  width: 100%;
 }
 .main-nav div {
   display: flex;
