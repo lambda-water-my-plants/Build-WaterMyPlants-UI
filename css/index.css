@@ -392,6 +392,9 @@ div {
   align-items: flex-start;
   width: 60%;
 }
+.hero .cta div:first-child {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 .hero .cta div button {
   width: 50%;
   height: 3.5rem;
