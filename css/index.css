@@ -506,7 +506,8 @@ section {
   height: 30rem;
 }
 .intro div h2 {
-  font-size: 4rem;
+  font-size: 3rem;
+  color: #3CCB59;
 }
 .intro div p {
   line-height: 1.75rem;
@@ -519,6 +520,12 @@ section {
 }
 .social h2 {
   font-size: 4rem;
+  color: #3CCB59;
+}
+@media (max-width: 800px) {
+  .social h2 {
+    font-size: 3rem;
+  }
 }
 .social div {
   display: flex;
