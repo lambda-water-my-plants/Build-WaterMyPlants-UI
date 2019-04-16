@@ -16,18 +16,27 @@
     .cta {
         .flexcol(center,flex-end);
         min-width: 800px;
-        margin: 10rem 10rem;
+        margin: 15rem 10rem;
         line-height: 2rem;
-        .test(red);
     }
 
     .cta div {
         .flexcol(center,flex-start);
         width: 60%;
+        // .test(red);
+
+        @media @tablet {
+            margin: 0 auto;
+        }
+
+        @media @mobile {
+            max-width: 420px;
+        }
     }
 
     .cta div:first-child {
-        background-color: rgba(0,0,0,0.5)
+        background-color: rgba(0,0,0,0.5);
+        margin-top:-5rem;
     }
 
     .cta div button {
@@ -43,10 +52,21 @@
         padding: 2rem;
         margin-right: 5rem;
         .flexcol(center,center);
+
+        @media @tablet {
+            width: 100%;
+            margin: 2rem auto;
+        }
     }
 
     .cta div button a {
         text-decoration: none;
         color: #FFF;
+    }
+
+    .cta div h1 {
+        @media @mobile {
+            font-size: 2.5rem;
+        }
     }
 }
