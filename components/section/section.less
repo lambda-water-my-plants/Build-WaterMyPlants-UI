@@ -16,8 +16,18 @@ section {
 .two-col {
     .flex(space-around, center);
 
+    @media @tablet {
+        .flexcol(center, center);
+    }
+
     div {
         width: 45%;
+        min-width: 25rem;
+        // .test(blue);
+
+        @media @tablet {
+            width: 100%;
+        }
     }
 }
 

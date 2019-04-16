@@ -137,6 +137,7 @@ h4,
 h5 {
   font-family: 'Karla', sans-serif;
   font-weight: bold;
+  color: #248230;
   margin: 0.5rem;
   padding: 0.5rem;
 }
@@ -155,6 +156,7 @@ p {
   font-size: 1.25rem;
   margin: 0.5rem;
   padding: 0.5rem;
+  color: #141618;
 }
 a {
   font-size: 1.25rem;
@@ -163,7 +165,6 @@ a {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: red;
 }
 @media (max-width: 800px) {
   .container {
@@ -290,6 +291,7 @@ a {
 }
 .main-footer .footer-col p {
   margin: -0.5rem;
+  color: #FFF;
 }
 @media (max-width: 800px) {
   .main-footer .footer-col p {
@@ -435,6 +437,9 @@ a {
     font-size: 2rem;
   }
 }
+.mast .cta p {
+  color: #FFF;
+}
 section {
   margin: 2rem 0;
 }
@@ -454,8 +459,22 @@ section {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 800px) {
+  .two-col {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .two-col div {
   width: 45%;
+  min-width: 25rem;
+}
+@media (max-width: 800px) {
+  .two-col div {
+    width: 100%;
+  }
 }
 .three-col {
   display: flex;
@@ -478,4 +497,17 @@ section {
   .three-col div {
     width: 95%;
   }
+}
+.intro div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.intro div img {
+  width: 22rem;
+  height: 30rem;
+}
+.intro div p {
+  line-height: 1.75rem;
 }
