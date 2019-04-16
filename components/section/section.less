@@ -1,0 +1,39 @@
+// Section Styles
+
+.full-width {
+    .flex(center, center);
+
+    div {
+        width: 100%;
+        height: 25rem;
+        .test(blue);
+    }
+}
+
+.two-col {
+    .flex(space-between, center);
+
+    div {
+        width: 45%;
+        height: 25rem;
+        .test(blue);
+    }
+}
+
+.three-col {
+    .flex(space-between, center);
+
+    @media @tablet {
+        .flexcol(center, center);
+    }
+
+    div {
+        width: 30%;
+        height: 25rem;
+        .test(red);
+
+        @media @tablet {
+            width: 95%;
+        }
+    }
+}

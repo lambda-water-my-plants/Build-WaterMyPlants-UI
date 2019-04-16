@@ -167,7 +167,7 @@ div {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: blue;
+  background-color: red;
 }
 @media (max-width: 800px) {
   .container {
@@ -181,13 +181,9 @@ div {
 }
 .main-nav {
   background-color: #3CCB59;
-  position: fixed;
   width: 100%;
 }
 @media (max-width: 500px) {
-  .main-nav {
-    position: relative;
-  }
 }
 .main-nav div {
   display: flex;
@@ -444,5 +440,51 @@ div {
 @media (max-width: 500px) {
   .hero .cta div h1 {
     font-size: 2.5rem;
+  }
+}
+.full-width {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.full-width div {
+  width: 100%;
+  height: 25rem;
+  background-color: blue;
+}
+.two-col {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.two-col div {
+  width: 45%;
+  height: 25rem;
+  background-color: blue;
+}
+.three-col {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .three-col {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.three-col div {
+  width: 30%;
+  height: 25rem;
+  background-color: red;
+}
+@media (max-width: 800px) {
+  .three-col div {
+    width: 95%;
   }
 }
