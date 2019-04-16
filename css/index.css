@@ -384,8 +384,10 @@ div {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: flex-end;
+  min-width: 800px;
   margin: 10rem 10rem;
   line-height: 2rem;
+  background-color: red;
 }
 .hero .cta div {
   display: flex;
