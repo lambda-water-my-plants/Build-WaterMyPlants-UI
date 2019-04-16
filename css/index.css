@@ -163,7 +163,7 @@ a {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: pink;
+  background-color: red;
 }
 @media (max-width: 800px) {
   .container {
@@ -357,7 +357,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-.hero {
+.mast {
   width: 100%;
   height: 50rem;
   margin: 0;
@@ -373,37 +373,39 @@ a {
   justify-content: space-around;
   align-items: flex-start;
 }
-.hero .cta {
+.mast .cta {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: flex-end;
-  min-width: 800px;
   margin: 15rem 10rem;
   line-height: 2rem;
 }
-.hero .cta div {
+.mast .cta div {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: flex-start;
   width: 60%;
+  min-width: 800px;
+  margin: 2rem;
 }
 @media (max-width: 800px) {
-  .hero .cta div {
-    margin: 0 auto;
+  .mast .cta div {
+    margin: 0.5rem auto;
+    min-width: 400px;
   }
 }
 @media (max-width: 500px) {
-  .hero .cta div {
-    max-width: 420px;
+  .mast .cta div {
+    min-width: 380px;
   }
 }
-.hero .cta div:first-child {
+.mast .cta div:first-child {
   background-color: rgba(0, 0, 0, 0.5);
   margin-top: -5rem;
 }
-.hero .cta div button {
+.mast .cta div button {
   width: 50%;
   height: 3.5rem;
   align-self: flex-end;
@@ -414,25 +416,23 @@ a {
   font-size: 1.5rem;
   color: #FFF;
   padding: 2rem;
-  margin-right: 5rem;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 }
 @media (max-width: 800px) {
-  .hero .cta div button {
+  .mast .cta div button {
     width: 100%;
-    margin: 2rem auto;
   }
 }
-.hero .cta div button a {
+.mast .cta div button a {
   text-decoration: none;
   color: #FFF;
 }
-@media (max-width: 500px) {
-  .hero .cta div h1 {
-    font-size: 2.5rem;
+@media (max-width: 800px) {
+  .mast .cta div h1 {
+    font-size: 2rem;
   }
 }
 .full-width {
