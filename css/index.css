@@ -406,6 +406,7 @@ a {
 .mast .cta div:first-child {
   background-color: rgba(255, 255, 255, 0.5);
   margin-top: -5rem;
+  padding: 1rem;
 }
 .mast .cta div button {
   width: 50%;
