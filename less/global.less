@@ -8,6 +8,7 @@ body {
 h1,h2,h3,h4,h5 {
     font-family: @karla;
     font-weight: bold;
+    color: @primaryColor;
     margin: 0.5rem;
     padding: 0.5rem;
 }
@@ -28,6 +29,7 @@ p {
     font-size: 1.25rem;
     margin: 0.5rem;
     padding: 0.5rem;
+    color: #141618;
 }
 
 a {
@@ -36,22 +38,24 @@ a {
 
 // Containers
 
-div {
-    margin: 0.5rem;
-    padding: 0.5rem;
-}
+// div {
+//     margin: 0.5rem;
+//     padding: 0.5rem;
+// }
 
 .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    .test(blue);
+    // .test(red);
 
     @media @tablet {
         .test(pink);
+        // max-width: 800px;
     }
 
     @media @mobile {
         .test(yellow);
+        // max-width: 500px;
     }
 }

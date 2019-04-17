@@ -1,0 +1,68 @@
+// Home Page Styles
+
+.intro {
+    div {
+        .flexcol(center, center);
+
+        img {
+            width: 22rem;
+            height: 30rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+            color: @secondaryColor;
+        }
+
+        p {
+            line-height: 1.75rem;
+        }
+    }
+}
+
+.social {
+    // .test(blue);
+    .flexcol(center, center);
+
+    h2 {
+        font-size: 4rem;
+        color: @secondaryColor;
+
+        @media @tablet {
+            font-size: 3rem;
+        }
+    }
+    
+    div {
+        .flex(center,center);
+        width: 80%;
+        margin: 2rem auto;
+
+        @media @tablet {
+            width: 100%;
+        }
+        
+        button {
+            width: 30rem;
+            height: 5rem;
+            margin: 0.20rem;
+            background-color: @secondaryColor;
+            color: #FFF;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: none;
+        }
+
+        button:first-child {
+            width: 50rem;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        button:last-child {
+            width: 50rem;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    }
+}

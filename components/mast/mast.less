@@ -1,0 +1,73 @@
+// Hero Styles
+
+.mast {
+    width: 100%;
+    height: 50rem;
+    margin: 0;
+    padding: 0;
+    background-color:#000;
+    background-image: url(../../assets/img/water-plants.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #FFF;
+    .flex(space-around,flex-start);
+
+    .cta {
+        .flexcol(center,flex-end);
+        margin: 15rem 10rem;
+        line-height: 2rem;
+    }
+
+    .cta div {
+        .flexcol(center,flex-start);
+        width: 60%;
+        min-width: 800px;
+        margin: 2rem;
+
+        @media @tablet {
+            margin: 0.5rem auto;
+            min-width: 400px;
+        }
+
+        @media @mobile {
+            min-width: 380px;
+        }
+    }
+
+    .cta div:first-child {
+        background-color: rgba(255,255,255,0.5);
+        margin-top:-5rem;
+    }
+
+    .cta div button {
+        width: 50%;
+        height: 3.5rem;
+        align-self: flex-end;
+        background-color: @secondaryColor;
+        border: 2px solid #FFF;
+        border-radius: 10px;
+        box-shadow: 1px 2px #FFF;
+        font-size: 1.5rem;
+        color: #FFF;
+        padding: 2rem;
+        // margin-right: 5rem;
+        .flexcol(center,center);
+
+        @media @tablet {
+            width: 100%;
+            // margin: 2rem auto;
+        }
+    }
+
+    .cta div button a {
+        text-decoration: none;
+        color: #FFF;
+    }
+
+    .cta div h1 {
+        @media @tablet {
+            font-size: 2rem;
+        }
+    }
+}

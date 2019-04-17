@@ -1,0 +1,48 @@
+// Section Styles
+
+section {
+    margin: 10rem 0;
+}
+
+.full-width {
+    .flex(center, center);
+
+    div {
+        width: 100%;
+        margin: 2rem;
+    }
+}
+
+.two-col {
+    .flex(space-around, center);
+
+    @media @tablet {
+        .flexcol(center, center);
+    }
+
+    div {
+        width: 45%;
+        min-width: 25rem;
+        // .test(blue);
+
+        @media @tablet {
+            width: 100%;
+        }
+    }
+}
+
+.three-col {
+    .flex(space-around, center);
+
+    @media @tablet {
+        .flexcol(center, center);
+    }
+
+    div {
+        width: 28%;
+
+        @media @tablet {
+            width: 95%;
+        }
+    }
+}

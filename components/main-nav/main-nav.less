@@ -1,7 +1,13 @@
 // Styles for Main Navigation Component
 
 .main-nav {
-    .test(@primaryColor);
+    .test(@secondaryColor);
+    // position: relative;
+    width: 100%;
+
+    @media @mobile {
+        // position: relative;
+    }
 
     div {
         .flex(space-between, center);
@@ -32,7 +38,7 @@
        @media @mobile {
            .flexcol(center, center);
            width: 100%;
-           margin: 1rem 0;
+           margin: 0rem 0;
        }
     }
 
@@ -48,7 +54,7 @@
         }
 
         @media @mobile {
-            width: 100%;
+            width: 80%;
             margin: 0rem;
             padding: 1rem;
             border-top: 1px solid #FFF;
@@ -56,11 +62,11 @@
         }
     }
 
-    ul li:last-child {
-        @media @mobile {
-            border-bottom: 1px solid #FFF;
-        }
-    }
+    // ul li:last-child {
+    //     @media @mobile {
+    //         border-bottom: 1px solid #FFF;
+    //     }
+    // }
 
     ul li a {
         text-decoration: none;
