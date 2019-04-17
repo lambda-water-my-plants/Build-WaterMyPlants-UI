@@ -560,3 +560,19 @@ section {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+.client-testimonials img {
+  max-width: 80rem;
+  max-height: 40rem;
+}
+.client-testimonials h1,
+.client-testimonials h2,
+.client-testimonials h3,
+.client-testimonials h4,
+.client-testimonials h5 {
+  color: #3CCB59;
+  background-color: #FFF;
+}
+.client-testimonials p {
+  color: #FFF;
+  background-color: #3CCB59;
+}
