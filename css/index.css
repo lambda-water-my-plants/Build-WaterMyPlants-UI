@@ -365,7 +365,7 @@ a {
   margin: 0;
   padding: 0;
   background-color: #000;
-  background-image: url(../../assets/img/water-plants.jpg);
+  background-image: url(/assets/img/water-plants.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -549,6 +549,7 @@ section {
   text-transform: uppercase;
   font-weight: bold;
   border: none;
+  font-size: 1.25rem;
 }
 .social div button:first-child {
   width: 50rem;
