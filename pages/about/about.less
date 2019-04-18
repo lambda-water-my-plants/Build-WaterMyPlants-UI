@@ -1,0 +1,49 @@
+.container {
+    // .test(red);
+
+    @media @tablet {
+        // .test(pink);
+    }
+
+    @media @mobile {
+        // .test(blue);
+    }
+}
+
+.team {
+    .flex(center,center);
+    flex-flow: row wrap;
+    margin: 2rem;
+
+    @media @tablet {
+        .flexcol(center, center);
+    }
+
+    .card {
+        margin: 2rem;
+        min-height: 30rem;
+        background-color: @secondaryColor;
+    }
+
+    .card ul li {
+        background-color: @primaryColor;
+        color: #FFF;
+    }
+
+    .card img {
+        min-height: 14rem;
+    }
+
+    .card h5 {
+        color: #FFF;
+        font-size: 1.75rem;
+    }
+
+    .card a {
+        color: #FFF;
+    }
+}
+
+.team-intro {
+    margin: 2rem;
+}

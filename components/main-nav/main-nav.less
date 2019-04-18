@@ -2,13 +2,11 @@
 
 .main-nav {
     .test(@secondaryColor);
-    // position: relative;
     width: 100%;
-
-    @media @mobile {
-        // position: relative;
-    }
-
+    height: 6rem;
+    position: fixed;
+    z-index: 100;
+    
     div {
         .flex(space-between, center);
         margin: 0;
@@ -24,29 +22,52 @@
 
     span {
         justify-self: flex-start;
-        margin: 1rem;
+        // margin: 1rem;
 
         @media @mobile {
             margin: 0.5rem;
         }
     }
 
+    .logo {
+        @media @mobile {
+            position: absolute;
+            left: 2rem;
+        }
+    }
+
+    .mobile-menu {
+        display: none;
+        font-size: 10rem;
+
+        @media @mobile {
+            display: flex;
+            position: absolute;
+            right: 2rem;
+        }
+    }
+
     ul  {
        .flex(center, center); 
        margin-right: 5rem;
+       height: 6rem;
 
        @media @mobile {
            .flexcol(center, center);
            width: 100%;
-           margin: 0rem 0;
+           position: absolute;
+           top: 9.9rem;
+           display: none;
        }
     }
 
     ul li {
-        width: 5rem;
+        width: 6rem;
+        height: 100%;
         margin: 1rem;
         padding: 1rem;
         text-align: center;
+        .flexcol(center,center);
 
         @media @tablet {
             margin: 0.5rem;
@@ -62,11 +83,11 @@
         }
     }
 
-    // ul li:last-child {
-    //     @media @mobile {
-    //         border-bottom: 1px solid #FFF;
-    //     }
-    // }
+    ul li:first-child {
+        @media @mobile {
+            border-top: none;
+        }
+    }
 
     ul li a {
         text-decoration: none;

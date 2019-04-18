@@ -160,6 +160,7 @@ p {
 }
 a {
   font-size: 1.25rem;
+  color: #248230;
 }
 .container {
   width: 100%;
@@ -167,20 +168,15 @@ a {
   margin: 0 auto;
 }
 @media (max-width: 800px) {
-  .container {
-    background-color: pink;
-  }
 }
 @media (max-width: 500px) {
-  .container {
-    background-color: yellow;
-  }
 }
 .main-nav {
   background-color: #3CCB59;
   width: 100%;
-}
-@media (max-width: 500px) {
+  height: 6rem;
+  position: fixed;
+  z-index: 100;
 }
 .main-nav div {
   display: flex;
@@ -200,11 +196,27 @@ a {
 }
 .main-nav span {
   justify-self: flex-start;
-  margin: 1rem;
 }
 @media (max-width: 500px) {
   .main-nav span {
     margin: 0.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .main-nav .logo {
+    position: absolute;
+    left: 2rem;
+  }
+}
+.main-nav .mobile-menu {
+  display: none;
+  font-size: 10rem;
+}
+@media (max-width: 500px) {
+  .main-nav .mobile-menu {
+    display: flex;
+    position: absolute;
+    right: 2rem;
   }
 }
 .main-nav ul {
@@ -213,6 +225,7 @@ a {
   justify-content: center;
   align-items: center;
   margin-right: 5rem;
+  height: 6rem;
 }
 @media (max-width: 500px) {
   .main-nav ul {
@@ -221,14 +234,21 @@ a {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 0rem 0;
+    position: absolute;
+    top: 9.9rem;
+    display: none;
   }
 }
 .main-nav ul li {
-  width: 5rem;
+  width: 6rem;
+  height: 100%;
   margin: 1rem;
   padding: 1rem;
   text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 800px) {
   .main-nav ul li {
@@ -243,6 +263,11 @@ a {
     padding: 1rem;
     border-top: 1px solid #FFF;
     background-color: #3CCB59;
+  }
+}
+@media (max-width: 500px) {
+  .main-nav ul li:first-child {
+    border-top: none;
   }
 }
 .main-nav ul li a {
@@ -280,7 +305,7 @@ a {
 @media (max-width: 800px) {
   .main-footer .footer-col {
     width: 100%;
-    height: 15rem;
+    height: 20rem;
     border-right: none;
     border-bottom: 1px solid #FFF;
     display: flex;
@@ -290,7 +315,7 @@ a {
   }
 }
 .main-footer .footer-col p {
-  margin: -0.5rem;
+  margin: 0.5rem;
   color: #FFF;
 }
 @media (max-width: 800px) {
@@ -365,7 +390,7 @@ a {
   margin: 0;
   padding: 0;
   background-color: #000;
-  background-image: url(/assets/img/water-plants.jpg);
+  background-image: url("../assets/img/water-plants.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -406,6 +431,7 @@ a {
 .mast .cta div:first-child {
   background-color: rgba(255, 255, 255, 0.5);
   margin-top: -5rem;
+  padding: 1rem;
 }
 .mast .cta div button {
   width: 50%;
@@ -576,4 +602,46 @@ section {
 .client-testimonials p {
   color: #FFF;
   background-color: #3CCB59;
+}
+@media (max-width: 800px) {
+}
+@media (max-width: 500px) {
+}
+.team {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 2rem;
+}
+@media (max-width: 800px) {
+  .team {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.team .card {
+  margin: 2rem;
+  min-height: 30rem;
+  background-color: #3CCB59;
+}
+.team .card ul li {
+  background-color: #248230;
+  color: #FFF;
+}
+.team .card img {
+  min-height: 14rem;
+}
+.team .card h5 {
+  color: #FFF;
+  font-size: 1.75rem;
+}
+.team .card a {
+  color: #FFF;
+}
+.team-intro {
+  margin: 2rem;
 }
