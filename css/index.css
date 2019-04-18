@@ -365,7 +365,7 @@ a {
   margin: 0;
   padding: 0;
   background-color: #000;
-  background-image: url(../../assets/img/water-plants.jpg);
+  background-image: url(/assets/img/water-plants.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -549,6 +549,7 @@ section {
   text-transform: uppercase;
   font-weight: bold;
   border: none;
+  font-size: 1.25rem;
 }
 .social div button:first-child {
   width: 50rem;
@@ -559,4 +560,20 @@ section {
   width: 50rem;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+.client-testimonials img {
+  max-width: 80rem;
+  max-height: 40rem;
+}
+.client-testimonials h1,
+.client-testimonials h2,
+.client-testimonials h3,
+.client-testimonials h4,
+.client-testimonials h5 {
+  color: #3CCB59;
+  background-color: #FFF;
+}
+.client-testimonials p {
+  color: #FFF;
+  background-color: #3CCB59;
 }
