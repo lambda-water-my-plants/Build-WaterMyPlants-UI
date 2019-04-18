@@ -10,3 +10,16 @@ navItem.forEach(item => {
         item.style.borderBottom = "none";
     });
 });
+
+const mobileIcon = document.querySelector('.mobile-menu');
+const mobileMenu = document.querySelector('.main-nav ul');
+
+mobileIcon.addEventListener('click', () => {
+    if(mobileMenu.style.display === 'none'){
+        mobileMenu.style.display = 'flex';
+    } else {
+        mobileMenu.style.display = 'none';
+    }
+});
+
+// Currently fires correctly on mobile, but also affects desktop if resized
