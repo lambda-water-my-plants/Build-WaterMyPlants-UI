@@ -2,13 +2,11 @@
 
 .main-nav {
     .test(@secondaryColor);
-    // position: relative;
     width: 100%;
-
-    @media @mobile {
-        // position: relative;
-    }
-
+    height: 6rem;
+    position: fixed;
+    z-index: 100;
+    
     div {
         .flex(space-between, center);
         margin: 0;
@@ -24,7 +22,7 @@
 
     span {
         justify-self: flex-start;
-        margin: 1rem;
+        // margin: 1rem;
 
         @media @mobile {
             margin: 0.5rem;
@@ -34,6 +32,7 @@
     ul  {
        .flex(center, center); 
        margin-right: 5rem;
+       height: 6rem;
 
        @media @mobile {
            .flexcol(center, center);
@@ -43,10 +42,12 @@
     }
 
     ul li {
-        width: 5rem;
+        width: 6rem;
+        height: 100%;
         margin: 1rem;
         padding: 1rem;
         text-align: center;
+        .flexcol(center,center);
 
         @media @tablet {
             margin: 0.5rem;
