@@ -160,6 +160,7 @@ p {
 }
 a {
   font-size: 1.25rem;
+  color: #248230;
 }
 .container {
   width: 100%;
@@ -280,7 +281,7 @@ a {
 @media (max-width: 800px) {
   .main-footer .footer-col {
     width: 100%;
-    height: 15rem;
+    height: 20rem;
     border-right: none;
     border-bottom: 1px solid #FFF;
     display: flex;
@@ -290,7 +291,7 @@ a {
   }
 }
 .main-footer .footer-col p {
-  margin: -0.5rem;
+  margin: 0.5rem;
   color: #FFF;
 }
 @media (max-width: 800px) {
@@ -591,8 +592,10 @@ section {
 .team {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+  margin: 2rem;
 }
 @media (max-width: 800px) {
   .team {
@@ -616,7 +619,11 @@ section {
 }
 .team .card h5 {
   color: #FFF;
+  font-size: 1.75rem;
 }
 .team .card a {
   color: #FFF;
+}
+.team-intro {
+  margin: 2rem;
 }

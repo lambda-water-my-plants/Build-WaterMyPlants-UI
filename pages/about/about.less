@@ -11,7 +11,9 @@
 }
 
 .team {
-    .flex(space-around,center);
+    .flex(center,center);
+    flex-flow: row wrap;
+    margin: 2rem;
 
     @media @tablet {
         .flexcol(center, center);
@@ -34,9 +36,14 @@
 
     .card h5 {
         color: #FFF;
+        font-size: 1.75rem;
     }
 
     .card a {
         color: #FFF;
     }
+}
+
+.team-intro {
+    margin: 2rem;
 }
