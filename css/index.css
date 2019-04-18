@@ -578,3 +578,45 @@ section {
   color: #FFF;
   background-color: #3CCB59;
 }
+@media (max-width: 800px) {
+  .container {
+    background-color: pink;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    background-color: blue;
+  }
+}
+.team {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .team {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.team .card {
+  margin: 2rem;
+  min-height: 35rem;
+  background-color: #3CCB59;
+}
+.team .card ul li {
+  background-color: #248230;
+  color: #FFF;
+}
+.team .card img {
+  min-height: 14rem;
+}
+.team .card h5 {
+  color: #FFF;
+}
+.team .card a {
+  color: #FFF;
+}
