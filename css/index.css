@@ -604,7 +604,7 @@ section {
 }
 .team .card {
   margin: 2rem;
-  min-height: 35rem;
+  min-height: 30rem;
   background-color: #3CCB59;
 }
 .team .card ul li {
