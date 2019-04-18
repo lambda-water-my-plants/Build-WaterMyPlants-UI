@@ -168,14 +168,8 @@ a {
   margin: 0 auto;
 }
 @media (max-width: 800px) {
-  .container {
-    background-color: pink;
-  }
 }
 @media (max-width: 500px) {
-  .container {
-    background-color: yellow;
-  }
 }
 .main-nav {
   background-color: #3CCB59;
@@ -610,14 +604,8 @@ section {
   background-color: #3CCB59;
 }
 @media (max-width: 800px) {
-  .container {
-    background-color: pink;
-  }
 }
 @media (max-width: 500px) {
-  .container {
-    background-color: blue;
-  }
 }
 .team {
   display: flex;
