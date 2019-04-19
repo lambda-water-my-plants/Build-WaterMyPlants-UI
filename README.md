@@ -12,3 +12,19 @@ The Water Mypp ensures plant lovers never need to worry about scheduling or wond
 
 ### Technical Design Document  
 The technical design document can be found [here](https://docs.google.com/document/d/1FAyLaWWjvthPrlgIjr8PdfB98Gg199KdGMB_t9B6cFE/edit)
+
+Water My Plants App  
+The following descriptions will aid you in installing, contributing to, and/or running this project:  
+Also, you can view the technical design document [here](https://docs.google.com/document/d/1FAyLaWWjvthPrlgIjr8PdfB98Gg199KdGMB_t9B6cFE/edit)  
+Fonts Used:  
+Roboto Google Font  
+Karla Google Font  
+Colors Used:  
+@primaryColor: #248230;  
+@secondaryColor: #3CCB59;  
+
+@highlightOne: #039683;  
+@highlightTwo: #01BBA0;  
+@highlightThree: #41DFD2;  
+Styling  
+The styling for this website was completed using LESS preprocessing. All LESS files were broken down into their respective components and then imported into the index.less file.  
